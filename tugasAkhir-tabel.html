@@ -12,7 +12,7 @@
 <body>
 
 <section>
-<table cellpadding=3 border=1>
+<table id="form" cellpadding=3 border=1>
 <tr>
 <th width=30>No.</th>
 <th width=280>Jenis Barang</th>
@@ -22,7 +22,7 @@
 </tr>
 
 <tr>
-<td> 1.</td>
+<td> 1</td>
 <td>Kertas HVS</td>
 <td><center>Rp.<input type="text" id="harga1" value="" size=7></center></td>
 <td><center><input type="text" id="qty1" value="" size=5 onchange="hitung()"></center></td>
@@ -30,7 +30,7 @@
 </tr>
 
 <tr>
-<td> 2.</td>
+<td> 2</td>
 <td>Fotocopy</td>
 <td><center>Rp.<input type="text" id="harga2" value="" size=7></center></td>
 <td><center><input type="text" id="qty2" value="" size=5 onchange="hitung()"></center></td>
@@ -38,7 +38,7 @@
 </tr>
 
 <tr>
-<td> 3.</td>
+<td> 3</td>
 <td>Jilid Hardcopy</td>
 <td><center>Rp.<input type="text" id="harga3" value="" size=7></center></td>
 <td><center><input type="text" id="qty3" value="" size=5 onchange="hitung()"></center></td>
@@ -46,7 +46,7 @@
 </tr>
 
 <tr>
-<td> 4.</td>
+<td> 4</td>
 <td>Print Warna</td>
 <td><center>Rp.<input type="text" id="harga4" value="" size=7></center></td>
 <td><center><input type="text" id="qty4" value="" size=5 onchange="hitung()"></center></td>
@@ -54,7 +54,7 @@
 </tr>
 
 <tr>
-<td> 5.</td>
+<td> 5</td>
 <td>Scan</td>
 <td><center>Rp.<input type="text" id="harga5" value="" size=7></center></td>
 <td><center><input type="text" id="qty5" value="" size=5 onchange="hitung()"></center></td>
@@ -80,7 +80,8 @@
 
 </table>
 <br />
-<center><input type="button" value="CLEAR" onclick="clear()" /></center>
+<center><input type="button" id="hapus" value="CLEAR" onclick="clear()" /></center>
+<center><input type="button" id="addRow" value ="Tambah Barang" onclick="tambah()"/></center>
 </section>
 
 <footer>&copy;</footer>
