@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aplikasi Kasir></title>
+    <link rel="stylesheet" href="D:\Hacktive8\tugasakhirGit\tugasAkhir-halAwal.css" media="screen" charset="utf-8">
+    <script type="text/javascript" src="tugasAkhir-penjualan.js"></script>
+    </head>
+  <body class="home">
+  		<div id="kontainer">
+
+        <div class="clear"></div>
+  			<hr>
+
+        <div id="cssmenu">
+          <nav>
+          <ul><span id="welcome">Selamat datang</span>
+            <li><a href=""><span>Pengaturan</span></a>
+                 <ul>
+                   <li><a href=""><span>Profil</span></a></li>
+                   <li><a href="index.html"><span>Keluar</span></a></li>
+                 </ul>
+             </li>
+              <li><a href=""><span>Data</span></a>
+                  <ul>
+                      <li><a href="tugasAkhir-dataMember.html"><span>Data Pelanggan</span></a></li>
+                      <li><a href=""><span>Data Produk</span></a></li>
+                 </ul>
+              </li>
+
+               <li><a href=""><span>Transaksi</span></a>
+                    <ul>
+                      <li><a href="tugasAkhir-pembelian.html"><span>Pembelian</span></a></li>
+                      <li><a href=""><span>Penjualan</span></a></li>
+                    </ul>
+                </li>
+         </ul>
+         </nav>
+        </div>
+
+      <div class="clear"></div>
+      <hr>
+
+  			<section class="konten">
+          <center id="judul">Transaksi Penjualan</center>
+          <hr>
+
+          <table id="form" cellpadding=3 border=1>
+          <tr>
+          <th width=30>No.</th>
+          <th width=280>Jenis Barang</th>
+          <th width=150>Harga</th>
+          <th width=70>Qty</th>
+          <th width=180>Jumlah</th>
+          </tr>
+
+          <tr>
+          <td> 1</td>
+          <td>Fotocopy</td>
+          <td><center>Rp.<input type="text" id="harga1" class="harga" value="" size=7></center></td>
+          <td><center><input type="text" id="qty1" class="qty" value="" size=5 onchange="hitung()"></center></td>
+          <td><center>Rp.<input id="jumlah1" class="jumlah" size=10 readonly></input></center></td>
+          </tr>
+
+          <tr>
+          <td> 2</td>
+          <td>Scan</td>
+          <td><center>Rp.<input type="text" id="harga2" class="harga" value="" size=7></center></td>
+          <td><center><input type="text" id="qty2" class="qty" value="" size=5 onchange="hitung()"></center></td>
+          <td><center>Rp.<input id="jumlah2" class="jumlah" size=10 readonly></input></center></td>
+          </tr>
+
+          <tr>
+          <td> 3</td>
+          <td>Print warna</td>
+          <td><center>Rp.<input type="text" id="harga3" class="harga" value="" size=7></center></td>
+          <td><center><input type="text" id="qty3" class="qty" value="" size=5 onchange="hitung()"></center></td>
+          <td><center>Rp.<input  id="jumlah3" class="jumlah" size=10 readonly></center></td>
+          </tr>
+
+          <tr>
+          <td> 4</td>
+          <td>Jilid Hardcopy</td>
+          <td><center>Rp.<input type="text" id="harga4" class="harga" value="" size=7></center></td>
+          <td><center><input type="text" id="qty4" class="qty" value="" size=5 onchange="hitung()"></center></td>
+          <td><center>Rp.<input id="jumlah4" class="jumlah" size=10 readonly></center></td>
+          </tr>
+
+          <tr>
+          <td> 5</td>
+          <td>Jilid Softcopy</td>
+          <td><center>Rp.<input type="text" id="harga5" class="harga" value="" size=7></center></td>
+          <td><center><input type="text" id="qty5" class="qty" value="" size=5 onchange="hitung()"></center></td>
+          <td><center>Rp.<input id="jumlah5" class="jumlah" size=10 readonly></center></td>
+          </tr>
+
+
+
+          <tr>
+          <td colspan=4 align="right">JUMLAH TOTAL</td>
+          <td><center>Rp.<input type="text" id="total" size=11 style="text-align:center" readonly></center></td>
+          </tr>
+
+          <tr>
+          <td colspan=4 align="right">DISKON</td>
+          <td><center>Rp.<input type="text" id="diskon" size=11 style="text-align:center" readonly></center></td>
+          </tr>
+
+          <tr>
+          <td colspan=4 align="right">JUMLAH BAYAR</td>
+          <td><center>Rp.<input type="text" id="bayar" size=11 style="text-align:center" readonly></center></td>
+          </tr>
+
+          </table>
+          <br />
+          <right><input type="button" id="hapus" value="CLEAR" onclick="clear()" /></right>
+          <right><input type="button" id="addRow" value ="Tambah Barang" onclick="tambah()"/></right>
+
+
+  			</section>
+
+  			<hr>
+  			<footer class="footer">
+  			</footer>
+  			<div class="clear"></div>
+  			<center>
+  				<strong class="text-center">Selamat Bekerja</strong><br>
+          <small class="text-center">JC Bless You</small>
+  			</center>
+  		</div>
+
+  </body>
