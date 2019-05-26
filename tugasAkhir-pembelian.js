@@ -39,13 +39,4 @@ function hitung(){
     }
   }
   grandTotal.value = total;
-
-  if(grandTotal.value >= 50000){
-    txtDiskon.value = 0.1*grandTotal.value;
-    totalBayar.value = grandTotal.value - txtDiskon.value;
-  }else{
-   grandTotal.value = grandTotal.value;
-   txtDiskon.value = "0";
-   totalBayar.value = grandTotal.value;
-  }
 }
