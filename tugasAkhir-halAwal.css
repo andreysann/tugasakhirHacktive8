@@ -1,6 +1,12 @@
 .home{
 	background-color: purple;
-	background: url(rainbow.jpg);
+	background: url(money.jpg);
+}
+.harga{
+	text-align: right;
+}
+.jumlah{
+	text-align: right;
 }
 
 body{
@@ -20,6 +26,11 @@ body{
 	padding: 20px;
 	min-height: 600px;
 	background-color:white;
+	opacity: 0.8;
+}
+#kontainer:hover{
+	opacity: 1.0;
+	filter: opacity(100);
 }
 .konten{
 	padding: 10px;
@@ -29,6 +40,7 @@ body{
 	font-size: 14px;
 	min-height:400px;
 }
+
 #form{
 	margin:auto;
 }
